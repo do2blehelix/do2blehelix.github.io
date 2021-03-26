@@ -1,0 +1,230 @@
+########################## hero area ##########################
+hero:
+  title : "Hello, I'm Ayan Banerjee"
+
+  # animated text loop
+  occupations:
+    - "Consultant"
+    - "Data Scientist"
+    - "Business Analyst"
+    - "Blogger"
+
+  # slider background image loop
+  slider_image:
+    - "images/slider/slider-deskbw.jpg"
+    - "images/slider/slider-code.png"
+    - "images/slider/slider-chart.png"
+    - "images/slider/slider-desk.jpg"
+    - "images/slider/slider-kboard.png"
+    - "images/slider/slider-oview.jpg"
+
+  # button
+  button:
+    enable : true
+    label : "VIEW MY MACHINE LEARNING BLOG"
+    link : "https://do2blehelix.github.io/the-ml-handbook/"
+
+
+####################### Full screen navigation #####################
+fullscreen_nav:
+  enable : true
+  bg_image : "images/backgrounds/hske.png"
+  first_name : "Lets"
+  last_name : "Collaborate"
+
+
+########################### About ##################################
+about:
+  enable : true
+  image : "images/profile.jpeg"
+  title : "KNOW MORE <br> ABOUT ME"
+  content : "Hi, I am Ayan, a Data Scientist currently working for a top Pharmaceutical Company. Love to dive into data, generate insights and recommendations. I am here to help you, I am here to provide strategies and guide you into the world of data. I can help you to increase your reach and generate content. Stay connected with me."
+  # button
+  button:
+    enable : true
+    label : "DOWNLOAD MY RESUME"
+    link : "Resume.pdf" # you can put your cv in static folder and give the path here.
+
+###########################3 Experience ##############################
+experience:
+  enable : true
+  title : "EXPERIENCE"
+  experience_list:
+    # experience item loop
+    - name : "Manager, Advanced Analytics"
+      company : "Novartis"
+      duration : "2017-present"
+      content : "Presently engaged as a Data Scientist and concurrently managing a group of 4 analysts in the Advanced Analytics team within Novartis, a leading pharma brand in the world."
+
+    # experience item loop
+    - name : "Business Analyst"
+      company : "Genpact"
+      duration : "2016-2017"
+      content : "Optimized strategy for business development by predictive analysis and finding the key business impact variables with significant information. Automation of important deliverables. Lean and Six Sigma trained & tested."
+
+    # experience item loop
+    - name : "Multimedia Operations Analyst"
+      company : "Goldman Sachs"
+      duration : "2014-2015"
+      content : "Managed operations of multiple audio visual departments and business centres, review business needs and simplify requirements."
+
+
+############################### Skill #################################
+skill:
+  enable : true
+  title : "SKILLS"
+  skill_list:
+    # skill item loop
+    - name : "Machine Learning"
+      parcentage : "80%"
+
+    # skill item loop
+    - name : "Python/R/SAS"
+      parcentage : "70%"
+
+    # skill item loop
+    - name : "Project Management"
+      parcentage : "90%"
+
+    # skill item loop
+    - name : "Visual Storyboarding"
+      parcentage : "85%"
+
+    # skill item loop
+    - name : "Domain Knowledge"
+      parcentage : "80%"
+
+################################### Service ##############################3
+service:
+  enable : true
+  title : "COMPETENCIES"
+  service_list:
+    # service item loop
+    - name : "Machine Learning"
+      image : "images/icons/deep-learning.png"
+
+    # service item loop
+    - name : "Storyboarding"
+      image : "images/icons/chart.png"
+
+    # service item loop
+    - name : "Project Management"
+      image : "images/icons/project-management.png"
+
+    # service item loop
+    - name : "Team Management"
+      image : "images/icons/team.png"
+
+    # service item loop
+    - name : "Digital Marketing"
+      image : "images/icons/browser.png"
+
+    # service item loop
+    - name : "Data Analytics"
+      image : "images/icons/analytics.png"
+
+
+############################## call to action #########################
+call_to_action:
+  enable : true
+  bg_image : "images/backgrounds/abstract2.jpg"
+  title : "DO I FIT INTO YOUR REQUIRED ROLE?"
+  button:
+    enable : true
+    label : "SAY HELLO!"
+    link : "mailto: ayanbanerjee.k@outlook.com"
+
+
+############################# portfolio ################################
+portfolio:
+  enable : true
+  title : "PORTFOLIO"
+  portfolio_list:
+    # portfolio item loop
+    - name : "Nano<br>degree <br> Data Scientist"
+      image : "images/portfolio/udacity-dsfe.png"
+      date : "Jan 2020"
+      category : "Certifications"
+
+    # portfolio item loop
+    - name : "Nano<br>degree <br> Data Analyst"
+      image : "images/portfolio/udacity-da.png"
+      date : "Mar 2019"
+      category : "Certifications"
+
+    # portfolio item loop
+    - name : "Kaggle <br> Titanic"
+      image : "images/portfolio/kaggle-titanic.png"
+      date : "Top 9%"
+      category : "Hackathons"
+
+    # portfolio item loop
+    - name : "Analtyics<br>Vidhya <br> Loan<br>Prediction"
+      image : "images/portfolio/avidya-loan.png"
+      date : "Rank 87 / 55209"
+      category : "Hackathons"
+
+    # portfolio item loop
+    - name : "Analytics<br>Vidhya <br> Sales<br>Prediction"
+      image : "images/portfolio/avidya-bmart.png"
+      date : "Rank 150 / 33046"
+      category : "Hackathons"
+
+    # portfolio item loop
+    #- name : "Project <br> Title"
+    #  image : "images/portfolio/item6.jpg"
+    #  date : "Feb 2018"
+    #  category : "Web Development"
+
+
+
+
+################################# Testimonial #########################33
+testimonial:
+  enable : true
+  title : "TESTIMONIALS"
+  testimonial_slider:
+    # slider item loop
+    - name : "Rishi Prakash"
+      image : "images/clients/rishi.png"
+      designation : "SME and Deployment Project Manager, VMWare"
+      content : "An excellent colleague. A thorough professional. Once given a task does it to the fullest. Reliable and dedicated worker and Leader with great multi tasking abilities."
+
+
+    # slider item loop
+    - name : "Apoorva Shetty"
+      image : "images/clients/apoorva.png"
+      designation : "Manager, Genpact"
+      content : "An exceptional leader and a smart working professional. Happy to have worked with him"
+
+
+
+######################### funfacts #############################3
+funfacts:
+  enable : true
+  funfacts_list:
+
+    # funfacts item loop
+    - name : "Years"
+      image : "images/icons/medal.png"
+      count : "7"
+
+    # funfacts item loop
+    - name : "Regions"
+      image : "images/icons/global.png"
+      count : "6"
+
+    # funfacts item loop
+    - name : "% Satisfied"
+      image : "images/icons/smile.png"
+      count : "100"
+
+    # funfacts item loop
+    - name : "Projects"
+      image : "images/icons/projects.png"
+      count : "13"
+
+############################## contact ###########################
+contact:
+  enable : true
+  title : "Nice to meet you!"
