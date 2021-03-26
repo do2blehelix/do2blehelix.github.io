@@ -1,6 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://do2blehelix.github.io/"
 title = "Ayan Banerjee"
+publishDir = "docs"
 # disable language
 disableLanguages = [] # desable language from here
 
