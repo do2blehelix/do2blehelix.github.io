@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://do2blehelix.github.io/"
-title = "Ayan Banerjee K"
-# publishDir = "docs"
+title = "Ayan Banerjee"
+# publishDir = "docs" # DOESN'T WORK WITH GH ACTIONS
 # disable language
 disableLanguages = [] # disable language from here
 
