@@ -29,6 +29,37 @@
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="style.css">
 
+	<style>
+		.underline {
+			position: relative;
+			display: inline-block;
+			top:23px;
+			height: 4px;
+			background-color: white;
+			/* animation: blinking .4s infinite; */
+			-webkit-animation: blinking 0.4s infinite backwards alternate;
+			}
+
+		@-webkit-keyframes blinking {
+		0%   { opacity: 1; }
+		100% { opacity: 0; }
+		}
+
+		@keyframes blinking {
+		0%   { opacity: 1; }
+		100% { opacity: 0; }
+		}
+
+		.modIcon{
+			font-size: 50px;
+			float: right;
+			color: #54B689;
+			right: 15px;
+			top: 10px;
+			position: absolute;
+			}
+	</style>
+
 </head> 
 
 
@@ -41,7 +72,7 @@
 	
 	<header class="header text-center">	    
 		<div class="force-overflow">
-			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">< Ayan Banerjee >_</a></h1>
+			<h1 class="blog-name pt-lg-4 mb-0" style="font-size:25px"> Ayan Banerjee <i class="fas fa-chevron-right"></i><span class="underline">&ensp;&nbsp;</span> </h1>
 			
 			<nav class="navbar navbar-expand-lg navbar-dark" >
 				
@@ -53,7 +84,10 @@
 					<div class="profile-section pt-3 pt-lg-0">
 						<img class="profile-image mb-3 rounded-circle mx-auto" src="https://media-exp1.licdn.com/dms/image/C4D03AQECVIsiANvxhg/profile-displayphoto-shrink_800_800/0/1607660516770?e=1624492800&v=beta&t=Sk53NB_2-iv_p711Amyd4kb5t1c951L23SseEK-Oyyc" alt="image" >			
 						
-						<div class="bio mb-3">Hi, my name is Ayan and I'm a Data Scientist. Welcome to my Website! Here you will find my work details and also some of my websites that I have designed. Thanks for visiting.</div><!--//bio-->
+						<div class="bio mb-3">Welcome, my name is Ayan and I'm a Data Scientist. <br> Thanks for visiting my Website! <br> 
+							Here you will find my work details, my portfolio, projects and also some of the websites that I have designed. Happy Exploring. <br><br> Use the links below or the email button below to reach out to me :)
+						</div><!--//bio-->
+
 						<ul class="social-list list-inline py-2 mx-auto">
 							<li class="list-inline-item"><a href="https://www.linkedin.com/in/ayanbanerjeek/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
 							<li class="list-inline-item"><a href="https://github.com/do2blehelix" target="_blank"><i class="fab fa-github-alt fa-fw"></i></a></li>
@@ -119,8 +153,11 @@
 					
 					<div class="media-body">
 						<h2 class="name font-weight-bold mb-1" id="about">Ayan Banerjee</h2>
-						<div class="tagline mb-3">Manager, Data Science</div>
-						<div class="bio mb-4">Client-centric, multitask professional with 7 years of experience possessing excellent analytical and logical skills. Presently engaged as a Manager in the Data Science team within Novartis, a leading pharma brand across the globe. Proficient in Project Management and led a group of analysts in the team. Well versed in a broad array of statistical and Machine Learning algorithms.
+						<div class="tagline mb-3" style="color: #54b689;">Manager, Data Science</div>
+						<div class="bio mb-4">
+							Client-centric, multitask professional with 7 years of experience possessing excellent analytical and logical skills. 
+							Presently engaged as a Manager in the Data Science team within Novartis, a leading pharma brand across the globe. Proficient in Project Management and led a group of analysts in the team. 
+							Well versed in a broad array of statistical and Machine Learning algorithms.
 						</div><!--//bio-->
 						<div class="mb-4">
 							<a class="btn btn-primary mb-3" href="https://ajvphhwjko.cloudimg.io/v7/https://do2blehelix.github.io/Resume.pdf"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline"></span>View Resume</a>
@@ -141,14 +178,14 @@
 		<section class="overview-section p-3 p-lg-5">
 			<div class="container">
 				<h1 class="section-title font-weight-bold mb-3" id="portfolio">What I do</h1>
-				<div class="section-intro mb-5">I have more than 7 years' experience building Data Science Projects. Below are the stacks I have been working with</div>
+				<div class="section-intro mb-5">I have more than 7 years' experience building Data Science Projects and designing solutions. Below are the stacks I have been working with:</div>
 				<div class="row">
 
 					<div class="item col-6 col-lg-3">
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/color/40/000000/python.png"/><img src="https://img.icons8.com/windows/40/266abd/r-project.png"/></div>
 							<h3 class="item-title">Machine Learning Toolset</h3>
-							<div class="item-desc">List skills/technologies here. You can change the icon above to any of the 1500+ <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula eget dolor.</div>
+							<div class="item-desc">Here are the ML toolset that I have been using. My daily work revolves around python and I have experience in SAS and R</div>
 								<li class="list-inline-item"><span class="badge badge-info badge-pill">Python</span></li>
 								<li class="list-inline-item"><span class="badge badge-info badge-pill">R</span></li>
 								<li class="list-inline-item"><span class="badge badge-info badge-pill">SAS</span></li>
@@ -159,7 +196,7 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/color/40/000000/tensorflow.png"/><img src="https://img.icons8.com/material-sharp/40/000000/django.png"/></div>
 							<h3 class="item-title">Machine Learning Algorithms</h3>
-							<div class="item-desc">List skills/technologies here. You can change the icon above to any of the 1500+ <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula eget dolor.  </div>
+							<div class="item-desc">With newer, faster, better algorithms creeping up in the ML space, its important to keep an eye on the technologies available, while keeping in mind what's coming next.</div>
 								<li class="list-inline-item"><span class="badge badge-info badge-pill">Tensorflow</span></li>
 								<li class="list-inline-item"><span class="badge badge-info badge-pill">Pytorch</span></li>
 								<li class="list-inline-item"><span class="badge badge-info badge-pill">Keras</span></li>
@@ -169,8 +206,8 @@
 					<div class="item col-6 col-lg-3">
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/fluent/40/000000/project-setup--v2.png"/><img src="https://img.icons8.com/fluent/40/000000/planner.png"/></div>
-							<h3 class="item-title">Project Management</h3>
-							<div class="item-desc">List skills/technologies here. You can change the icon above to any of the 1500+ <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula eget dolor.  </div>
+							<h3 class="item-title">Stakeholder & Project Management</h3>
+							<div class="item-desc">I have been interacting with Global stakeholders ranging from USA to Japan to Eurpoean and South East Asia. Understanding the different needs of each country and brand helps me provide customized solutions</div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 					
@@ -178,7 +215,7 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/fluent/40/000000/conference-call.png"/><img src="https://img.icons8.com/bubbles/50/000000/people-group-bill--v1.png"/><img src="https://img.icons8.com/color/48/000000/group-task.png"/></div>
 							<h3 class="item-title">Team Management</h3>
-							<div class="item-desc">List skills/technologies here. You can change the icon above to any of the 1500+ <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula eget dolor.  </div>
+							<div class="item-desc">Leading analysts in the team to deliver consistent soultions, while providing with the best of growth opportunities. I have also been the Novartis site wide Quiz lead </div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 					
@@ -186,7 +223,7 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/dusk/40/000000/presentation--v1.png"/><img src="https://img.icons8.com/color/40/000000/terms-and-conditions.png"/><img src="https://img.icons8.com/color/40/000000/handshake.png"/></i></div>
 							<h3 class="item-title">Storyboarding</h3>
-							<div class="item-desc">List skills/technologies here. You can change the icon above to any of the 1500+ <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula eget dolor.  </div>
+							<div class="item-desc"> A picture is worth a thousand words. A story is worth a thousand pictures. <br> I believe in the art of presentation speaking for itself. The devil is in the details. A corretly told story influences stakeholder relationship </div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 
@@ -194,7 +231,7 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/fluent/40/000000/web-advertising.png"/><img src="https://img.icons8.com/fluent/40/000000/web-analystics.png"/><img src="https://img.icons8.com/fluent/40/000000/filter.png"/></div>
 							<h3 class="item-title">Digital Marketing & Data Analytics</h3>
-							<div class="item-desc">List skills/technologies here. You can change the icon above to any of the 1500+ <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula eget dolor.  </div>
+							<div class="item-desc">I have been interacting with Digital Marketing, not only for my porfessional work where I analysed multichannel engagement, but also in my personal websites. Having a first hand experience give me the edge. </div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 					
@@ -202,14 +239,14 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/cute-clipart/40/000000/flask.png"/><i class="fab fa-html5 mr-2"></i><i class="fab fa-css3-alt mr-2"></i><i class="fab fa-sass"></i></div>
 							<h3 class="item-title">Web Application Development</h3>
-							<div class="item-desc">List skills/technologies here. You can change the icon above to any of the 1500+ <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula eget dolor.  </div>
+							<div class="item-desc">Business analytics is moving fast towards integrated insights and reports. My domain knowlegde of HTML and the python web framework allows me to desing and develop easily accessible business use case dashboards. </div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 					<div class="item col-6 col-lg-3">
 						<div class="item-inner">
-							<div class="item-icon"><img src="https://img.icons8.com/color/40/000000/git.png"/><img src="https://img.icons8.com/ios-filled/40/000000/github.png"/><img src="https://img.icons8.com/color/40/000000/gitlab.png"/></div>
-							<h3 class="item-title">Git CI CL</h3>
-							<div class="item-desc">List skills/technologies here. You can change the icon above to any of the 1500+ <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula eget dolor.  </div>
+							<div class="item-icon"><img src="https://img.icons8.com/color/40/000000/amazon-web-services.png"/><img src="https://img.icons8.com/color/40/000000/azure-1.png"/><img src="https://img.icons8.com/color/40/000000/git.png"/><img src="https://img.icons8.com/ios-filled/40/000000/github.png"/><img src="https://img.icons8.com/color/40/000000/gitlab.png"/></div>
+							<h3 class="item-title">Cloud Data Infrastructure</h3>
+							<div class="item-desc">Data is moving to the cloud. Knowlegde of the cloud infrastructure and version control is important to scale a project to reach impactful status. </div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 				</div><!--//row-->
@@ -409,23 +446,23 @@
 						<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
-							<h4 class="modal-title"><i class="fas fa-hospital-user"></i> Risk-based Approach in Benign/chronic hematology for Optimization of Workloads</h4>
+								<h4 class="modal-title"> <i class="fas fa-hospital-user mx-3 modIcon"></i> Risk-based Approach in Benign/chronic hematology for Optimization of Workloads</h4>
 							</div>
 							<div class="modal-body">
-								<h5> <i class="fas fa-question-circle" style="color:green"></i> &nbsp; Business Objective </h5> 
-									Segment and Prioritize SMZs with a deficit of Haematologists as compared to patients for targeting. 
+								<h5> <i class="fas fa-question-circle" style="color:darkgoldenrod"></i> &nbsp; Business Objective </h5> 
+									<p style="font-size:14px">Segment and Prioritize SMZs with a deficit of Haematologists as compared to patients for targeting. 
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-backward" style="color:green"></i> &nbsp; Context </h5> 
-									Due to lack of dedicated HEM clinics and ageing population, the number of patients outweighs Haematologists. This results in delay of care for high risk patients. Current data on the hospitals, HCPs, patients etc. exists in silos and is not streamlined. 
+								<h5> <i class="fas fa-backward" style="color:darkgoldenrod"></i> &nbsp; Context </h5> 
+									<p style="font-size:14px">Due to lack of dedicated HEM clinics and ageing population, the number of patients outweighs Haematologists. This results in delay of care for high risk patients. Current data on the hospitals, HCPs, patients etc. exists in silos and is not streamlined. 
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-clinic-medical" style="color:green"></i> &nbsp; Business Outcome </h5>
-									Enable all hematology disease patients to receive optimal diagnosis and treatment by supporting hematologists to manage workload with task-sharing approach.
+								<h5> <i class="fas fa-clinic-medical" style="color:darkgoldenrod"></i> &nbsp; Business Outcome </h5>
+									<p style="font-size:14px">Enable all hematology disease patients to receive optimal diagnosis and treatment by supporting hematologists to manage workload with task-sharing approach.
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-road" style="color:green"></i> &nbsp; Approach </h5> 
-									Integrate different data sources like Novartis internal data, DDD, Takumi-San etc. to get complete mapping of Haematologists to Hospitals and Hospitals to SMZs. Cluster SMZs on the basis of the Haematologists to patient ratio and other features. Develop a dashboard with a geo plot depicting the different SMZs and their segmentation for targeting.
+								<h5> <i class="fas fa-road" style="color:darkgoldenrod"></i> &nbsp; Approach </h5> 
+									<p style="font-size:14px">Integrate different data sources like Novartis internal data, DDD, Takumi-San etc. to get complete mapping of Haematologists to Hospitals and Hospitals to SMZs. Cluster SMZs on the basis of the Haematologists to patient ratio and other features. Develop a dashboard with a geo plot depicting the different SMZs and their segmentation for targeting.
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-bullseye" style="color:green"></i> &nbsp; Project Outcome </h5> 
-									Clusternig was done and efficient results were declared to target 9% of SMZ to affect 42% hems and helping 32% patients in Japan								
+								<h5> <i class="fas fa-bullseye" style="color:darkgoldenrod"></i> &nbsp; Project Outcome </h5> 
+									<p style="font-size:14px">Clusternig was done and efficient results were declared to target 9% of SMZ to affect 42% hems and helping 32% patients in Japan								
 							</div>
 							<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -448,7 +485,7 @@
 									<div class="card-body">
 										<h5 class="card-title"><a data-toggle="modal" data-target="#myModal2" class="theme-link">Global Product Pricing Analytics</a></h5>
 										<p class="card-text">Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-										<p class="card-text"><small class="text-muted">Client: Novartis Japan Hematology</small></p>
+										<p class="card-text"><small class="text-muted">Client: Novartis Global Pricing (Oncology)</small></p>
 									</div>
 								</div>
 							</div>
@@ -467,23 +504,23 @@
 						<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
-							<h4 class="modal-title">Global Product Pricing Strategy</h4>
+								<h4 class="modal-title"><i class="fas fa-hand-holding-usd mx-3 modIcon"></i> Global Product Pricing Strategy</h4>
 							</div>
 							<div class="modal-body">
-								<h5> <i class="fas fa-question-circle" style="color:green"></i> &nbsp; Business Objective </h5> 
-									To develop and distribute a web application for Global Pricing Strategy team for Novartis Oncology comparing Pricing Analogs across the Oncology market 
+								<h5> <i class="fas fa-question-circle" style="color:darkgoldenrod"></i> &nbsp; Business Objective </h5> 
+									<p style="font-size:14px">To develop and distribute a web application for Global Pricing Strategy team for Novartis Oncology comparing Pricing Analogs across the Oncology market 
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-backward" style="color:green"></i> &nbsp; Context </h5> 
-									Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug	
+								<h5> <i class="fas fa-backward" style="color:darkgoldenrod"></i> &nbsp; Context </h5> 
+									<p style="font-size:14px">Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug	
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-clinic-medical" style="color:green"></i> &nbsp; Business Outcome </h5>
-									Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug
+								<h5> <i class="fas fa-clinic-medical" style="color:darkgoldenrod"></i> &nbsp; Business Outcome </h5>
+									<p style="font-size:14px">Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-road" style="color:green"></i> &nbsp; Approach </h5> 
-									Integrate different data sources like Novartis internal data, Pricentric, IQVIA, Sales, etc. to get complete mapping of already launched products. Explore the data and derive important features for Product Analogs using Machine Learning
+								<h5> <i class="fas fa-road" style="color:darkgoldenrod"></i> &nbsp; Approach </h5> 
+									<p style="font-size:14px">Integrate different data sources like Novartis internal data, Pricentric, IQVIA, Sales, etc. to get complete mapping of already launched products. Explore the data and derive important features for Product Analogs using Machine Learning
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-bullseye" style="color:green"></i> &nbsp; Project Outcome </h5> 
-									Web application was designed in Python Plotly Dash framework and deployed to individual system using Docker								
+								<h5> <i class="fas fa-bullseye" style="color:darkgoldenrod"></i> &nbsp; Project Outcome </h5> 
+									<p style="font-size:14px">Web application was designed in Python Plotly Dash framework and deployed to individual system using Docker								
 							</div>
 							<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -504,7 +541,7 @@
 									<div class="card-body">
 										<h5 class="card-title"><a data-toggle="modal" data-target="#myModal3" class="theme-link">ROI Analysis</a></h5>
 										<p class="card-text">Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-										<p class="card-text"><small class="text-muted">Client: Novartis Japan Hematology</small></p>
+										<p class="card-text"><small class="text-muted">Client: USA Commercial Acceleration</small></p>
 									</div>
 								</div>
 							</div>
@@ -523,23 +560,23 @@
 						<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
-							<h4 class="modal-title">Japan Hematology Risk Based Workload</h4>
+								<h4 class="modal-title"><i class="fas fa-file-invoice-dollar mx-3 modIcon"></i>Japan Hematology Risk Based Workload</h4>
 							</div>
 							<div class="modal-body">
-								<h5> <i class="fas fa-question-circle" style="color:green"></i> &nbsp; Business Objective </h5> 
-									To develop and distribute a web application for Global Pricing Strategy team for Novartis Oncology comparing Pricing Analogs across the Oncology market 
+								<h5> <i class="fas fa-question-circle" style="color:darkgoldenrod"></i> &nbsp; Business Objective </h5> 
+									<p style="font-size:14px">To develop and distribute a web application for Global Pricing Strategy team for Novartis Oncology comparing Pricing Analogs across the Oncology market 
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-backward" style="color:green"></i> &nbsp; Context </h5> 
-									Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug	
+								<h5> <i class="fas fa-backward" style="color:darkgoldenrod"></i> &nbsp; Context </h5> 
+									<p style="font-size:14px">Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug	
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-clinic-medical" style="color:green"></i> &nbsp; Business Outcome </h5>
-									Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug
+								<h5> <i class="fas fa-clinic-medical" style="color:darkgoldenrod"></i> &nbsp; Business Outcome </h5>
+									<p style="font-size:14px">Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-road" style="color:green"></i> &nbsp; Approach </h5> 
-									Integrate different data sources like Novartis internal data, Pricentric, IQVIA, Sales, etc. to get complete mapping of already launched products. Explore the data and derive important features for Product Analogs using Machine Learning
+								<h5> <i class="fas fa-road" style="color:darkgoldenrod"></i> &nbsp; Approach </h5> 
+									<p style="font-size:14px">Integrate different data sources like Novartis internal data, Pricentric, IQVIA, Sales, etc. to get complete mapping of already launched products. Explore the data and derive important features for Product Analogs using Machine Learning
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-bullseye" style="color:green"></i> &nbsp; Project Outcome </h5> 
-									Web application was designed in Python Plotly Dash framework and deployed to individual system using Docker								
+								<h5> <i class="fas fa-bullseye" style="color:darkgoldenrod"></i> &nbsp; Project Outcome </h5> 
+									<p style="font-size:14px">Web application was designed in Python Plotly Dash framework and deployed to individual system using Docker								
 							</div>
 							<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -560,7 +597,7 @@
 									<div class="card-body">
 										<h5 class="card-title"><a data-toggle="modal" data-target="#myModal4" class="theme-link">Japan Clustering</a></h5>
 										<p class="card-text">Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-										<p class="card-text"><small class="text-muted">Client: Novartis Japan Hematology</small></p>
+										<p class="card-text"><small class="text-muted">Client: Novartis USA</small></p>
 									</div>
 								</div>
 							</div>
@@ -579,23 +616,23 @@
 						<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
-							<h4 class="modal-title">Japan Hematology Risk Based Workload</h4>
+								<h4 class="modal-title"><i class="fas fa-search-dollar mx-3 modIcon"></i>Japan Hematology Risk Based Workload</h4>
 							</div>
 							<div class="modal-body">
-								<h5> <i class="fas fa-question-circle" style="color:green"></i> &nbsp; Business Objective </h5> 
-									To develop and distribute a web application for Global Pricing Strategy team for Novartis Oncology comparing Pricing Analogs across the Oncology market 
+								<h5> <i class="fas fa-question-circle" style="color:darkgoldenrod"></i> &nbsp; Business Objective </h5> 
+									<p style="font-size:14px">To develop and distribute a web application for Global Pricing Strategy team for Novartis Oncology comparing Pricing Analogs across the Oncology market 
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-backward" style="color:green"></i> &nbsp; Context </h5> 
-									Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug	
+								<h5> <i class="fas fa-backward" style="color:darkgoldenrod"></i> &nbsp; Context </h5> 
+									<p style="font-size:14px">Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug	
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-clinic-medical" style="color:green"></i> &nbsp; Business Outcome </h5>
-									Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug
+								<h5> <i class="fas fa-clinic-medical" style="color:darkgoldenrod"></i> &nbsp; Business Outcome </h5>
+									<p style="font-size:14px">Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the price of a to be launching drug
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-road" style="color:green"></i> &nbsp; Approach </h5> 
-									Integrate different data sources like Novartis internal data, Pricentric, IQVIA, Sales, etc. to get complete mapping of already launched products. Explore the data and derive important features for Product Analogs using Machine Learning
+								<h5> <i class="fas fa-road" style="color:darkgoldenrod"></i> &nbsp; Approach </h5> 
+									<p style="font-size:14px">Integrate different data sources like Novartis internal data, Pricentric, IQVIA, Sales, etc. to get complete mapping of already launched products. Explore the data and derive important features for Product Analogs using Machine Learning
 								<hr style="margin:20px">
-								<h5> <i class="fas fa-bullseye" style="color:green"></i> &nbsp; Project Outcome </h5> 
-									Web application was designed in Python Plotly Dash framework and deployed to individual system using Docker								
+								<h5> <i class="fas fa-bullseye" style="color:darkgoldenrod"></i> &nbsp; Project Outcome </h5> 
+									<p style="font-size:14px">Web application was designed in Python Plotly Dash framework and deployed to individual system using Docker								
 							</div>
 							<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -609,7 +646,7 @@
 
 
 				</div><!--//row-->
-				<div class="text-center py-3"><a href="portfolio.html" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>View Portfolio</a></div>
+				<!-- <div class="text-center py-3"><a href="portfolio.html" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>View Portfolio</a></div> -->
 				
 			</div><!--//container-->
 		</section><!--//featured-section-->
@@ -665,17 +702,17 @@
 								<p class="mb-0"><a class="more-link" href="https://medium.com/@do2blehelix/a-minimal-instant-quick-start-guide-to-github-for-beginners-3310e96fe0ba">Read more &rarr;</a></p>
 							</div>
 							<div class="card-footer">
-								<small class="text-muted">Published 3 weeks ago</small>
+								<small class="text-muted">Published on Medium</small>
 							</div>
 						</div><!--//card-->
 					</div><!--//col-->
 
 
 				</div><!--//row-->
-				<div class="text-center py-3"><a href="blog-home.html" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>View Blog</a></div>
+				<div class="text-center py-3"><a href="https://do2blehelix.github.io/the-ml-handbook/" class="btn btn-primary" target="_blank"><i class="fas fa-arrow-alt-circle-right mr-2"></i>View Blog</a></div>
 			</div><!--//container-->
 			
-		</section>-->
+		</section>
 
 <!-- #############################################################################################################################
 ###################################################   FOOTER   ###################################################################
