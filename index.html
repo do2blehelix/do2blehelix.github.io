@@ -106,8 +106,10 @@
 							<a class="nav-link" href="#portfolio"><i class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://docs.google.com/viewer?url=https://docs.google.com/presentation/d/1vE78X_QrQiLsUNivDO6TEPbi1qW14pueiuHs1TqWsgo/export/pdf">
-								<i class="fas fa-file-alt fa-fw mr-2"></i>Full Resume</a>
+							<a class="nav-link" href="#testimonials"><i class="far fa-thumbs-up fa-fw mr-2"></i>Testimonials</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects"><i class="fas fa-project-diagram fa-fw mr-2"></i>Projects</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -156,13 +158,36 @@
 						<h2 class="name font-weight-bold mb-1" id="about">Ayan Banerjee</h2>
 						<div class="tagline mb-3" style="color: #54b689;">Manager, Data Science</div>
 						<div class="bio mb-4">
-							Client-centric, multitask professional with 7 years of experience possessing excellent analytical and logical skills. 
-							Presently engaged as a Manager in the Data Science team within Novartis, a leading pharma brand across the globe. Proficient in Project Management and led a group of analysts in the team. 
-							Well versed in a broad array of statistical and Machine Learning algorithms.
+							Client-centric, multitask professional with <strong>7+ years</strong> of experience possessing excellent analytical and logical skills. 
+							Presently engaged as a <strong>Manager</strong> in the <strong>Data Science</strong> team within Novartis, a leading pharma brand across the globe. 
+							Proficient in <strong>Project Management</strong> and led a group of analysts in the team. 
+							Well versed in a broad array of statistical and <strong>Machine Learning</strong> algorithms.
 						</div><!--//bio-->
+						
 						<div class="mb-4">
-							<a class="btn btn-primary mb-3" href="https://ajvphhwjko.cloudimg.io/v7/https://docs.google.com/presentation/d/1vE78X_QrQiLsUNivDO6TEPbi1qW14pueiuHs1TqWsgo/export/pdf"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline"></span>View Resume</a>
+							<a class="btn btn-primary mb-3" href="#" id="pop"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline"></span>View Resume</a>
 							<a class="btn btn-secondary mr-2 mb-3" href="https://do2blehelix.github.io/the-ml-handbook"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline">View</span> My Machine Learning Blog</a>
+							
+							<!-- Modal -->
+							<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-xl">
+									<div class="modal-content">
+										<div class="modal-header">
+										<h4 class="modal-title" id="myModalLabel">Resume Preview</h4>
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										</div>
+										<div class="modal-body">
+											<img class="img-fluid" src="https://ajvphhwjko.cloudimg.io/v7/https://docs.google.com/presentation/d/1vE78X_QrQiLsUNivDO6TEPbi1qW14pueiuHs1TqWsgo/export/pdf">
+										</div>
+										<div class="modal-footer">
+											<a href="https://docs.google.com/presentation/d/1vE78X_QrQiLsUNivDO6TEPbi1qW14pueiuHs1TqWsgo/export/pdf">
+											<button class="btn btn-default"> <i class="fas fa-download"></i> Download Resume (PDF Version)</button>
+											</a>
+										</div>
+								  	</div>
+								</div>
+							</div>
+
 						</div>
 					</div><!--//media-body-->
 					<img class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" src="https://image.freepik.com/free-vector/pitch-meeting-concept-illustration_114360-5910.jpg" alt="">
@@ -186,7 +211,10 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/color/40/000000/python.png"/><img src="https://img.icons8.com/windows/40/266abd/r-project.png"/></div>
 							<h3 class="item-title">Machine Learning Toolset</h3>
-							<div class="item-desc">Here are the ML toolset that I have been using. My daily work revolves around python and I have experience in SAS and R</div>
+							<div class="item-desc">
+								I have worked in Python, R and SAS with Python being the more used data analysis toolkit.
+								Apart from the usual ones, I have experience in Orange and Alteryx.
+							</div>
 								<li class="list-inline-item"><span class="badge badge-info badge-pill">Python</span></li>
 								<li class="list-inline-item"><span class="badge badge-info badge-pill">R</span></li>
 								<li class="list-inline-item"><span class="badge badge-info badge-pill">SAS</span></li>
@@ -197,10 +225,13 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/color/40/000000/tensorflow.png"/><img src="https://img.icons8.com/material-sharp/40/000000/django.png"/></div>
 							<h3 class="item-title">Machine Learning Algorithms</h3>
-							<div class="item-desc">With newer, faster, better algorithms creeping up in the ML space, its important to keep an eye on the technologies available, while keeping in mind what's coming next.</div>
-								<li class="list-inline-item"><span class="badge badge-info badge-pill">Tensorflow</span></li>
+							<div class="item-desc">
+								I have worked with a wide variety of ML Algorithms, both Supervised and Unsupervised -
+								Regression, Classification, SVM, Random Forest, Catboost, KNN, K-Means, DBScan, Deep Learning Neural Networks
+							</div>
+								<!-- <li class="list-inline-item"><span class="badge badge-info badge-pill">Tensorflow</span></li>
 								<li class="list-inline-item"><span class="badge badge-info badge-pill">Pytorch</span></li>
-								<li class="list-inline-item"><span class="badge badge-info badge-pill">Keras</span></li>
+								<li class="list-inline-item"><span class="badge badge-info badge-pill">Keras</span></li> -->
                         </div><!--//item-inner-->
 
 					</div><!--//item-->
@@ -208,7 +239,10 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/fluent/40/000000/project-setup--v2.png"/><img src="https://img.icons8.com/fluent/40/000000/planner.png"/></div>
 							<h3 class="item-title">Stakeholder & Project Management</h3>
-							<div class="item-desc">I have been interacting with Global stakeholders ranging from USA to Japan to Eurpoean and South East Asia. Understanding the different needs of each country and brand helps me provide customized solutions</div>
+							<div class="item-desc">
+								My interaction has been with Global stakeholders ranging from USA to Japan to Europe and South East Asia. 
+								Understanding the different needs of each country and brand helped me provide customized solutions.
+							</div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 					
@@ -216,7 +250,10 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/fluent/40/000000/conference-call.png"/><img src="https://img.icons8.com/bubbles/50/000000/people-group-bill--v1.png"/><img src="https://img.icons8.com/color/48/000000/group-task.png"/></div>
 							<h3 class="item-title">Team Management</h3>
-							<div class="item-desc">Leading analysts in the team to deliver consistent soultions, while providing with the best of growth opportunities. I have also been the Novartis site wide Quiz lead </div>
+							<div class="item-desc">
+								I have been leading analysts in the team to deliver consistent solutions, while providing them with the best of growth opportunities.
+								I actively take part in organizing Town-halls, Hackathons and Quizzes for all associates.  
+							</div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 					
@@ -224,7 +261,10 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/dusk/40/000000/presentation--v1.png"/><img src="https://img.icons8.com/color/40/000000/terms-and-conditions.png"/><img src="https://img.icons8.com/color/40/000000/handshake.png"/></i></div>
 							<h3 class="item-title">Storyboarding</h3>
-							<div class="item-desc"> A picture is worth a thousand words. A story is worth a thousand pictures. <br> I believe in the art of presentation speaking for itself. The devil is in the details. A corretly told story influences stakeholder relationship </div>
+							<div class="item-desc">
+								Storytelling is an art that I am keen at implementing. A well told story backed by data can provide impact for the right outcomes. 
+								The right presentation is key to influencing mindsets with the right mix of information, images and data.
+							</div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 
@@ -232,7 +272,9 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/fluent/40/000000/web-advertising.png"/><img src="https://img.icons8.com/fluent/40/000000/web-analystics.png"/><img src="https://img.icons8.com/fluent/40/000000/filter.png"/></div>
 							<h3 class="item-title">Digital Marketing & Data Analytics</h3>
-							<div class="item-desc">I have been interacting with Digital Marketing, not only for my porfessional work where I analysed multichannel engagement, but also in my personal websites. Having a first hand experience give me the edge. </div>
+							<div class="item-desc">
+								I have been interacting with Digital Marketing, not only for my porfessional work where I analysed multichannel engagement, but also in my personal websites. 
+								Having a first hand experience give me the edge. </div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 					
@@ -240,14 +282,19 @@
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/cute-clipart/40/000000/flask.png"/><i class="fab fa-html5 mr-2"></i><i class="fab fa-css3-alt mr-2"></i><i class="fab fa-sass"></i></div>
 							<h3 class="item-title">Web Application Development</h3>
-							<div class="item-desc">Business analytics is moving fast towards integrated insights and reports. My domain knowlegde of HTML and the python web framework allows me to desing and develop easily accessible business use case dashboards. </div>
+							<div class="item-desc">
+								Business analytics is moving fast towards integrated insights and reports. My domain knowlegde of HTML and the python web framework allows me to design 
+								and develop easily accessible business use case dashboards. </div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 					<div class="item col-6 col-lg-3">
 						<div class="item-inner">
 							<div class="item-icon"><img src="https://img.icons8.com/color/40/000000/amazon-web-services.png"/><img src="https://img.icons8.com/color/40/000000/azure-1.png"/><img src="https://img.icons8.com/color/40/000000/git.png"/><img src="https://img.icons8.com/ios-filled/40/000000/github.png"/><img src="https://img.icons8.com/color/40/000000/gitlab.png"/></div>
 							<h3 class="item-title">Cloud Data Infrastructure</h3>
-							<div class="item-desc">Data is moving to the cloud. Knowlegde of the cloud infrastructure and version control is important to scale a project to reach impactful status. </div>
+							<div class="item-desc">
+								Data is moving to the cloud. I posess the knowledge of cloud infrastructure and version control which is important to scale a project 
+								while working with multiple collaborators. 
+							</div>
 						</div><!--//item-inner-->
 					</div><!--//item-->
 				</div><!--//row-->
@@ -268,7 +315,7 @@
 			<div class="container">
 					<h3 class="section-title font-weight-bold mb-5">Companies I've Worked With</h3>
 					<div class="logos row mb-5">
-						<div class="logo px-3 col-6 col-md-4 col-lg-2 mr-0 px-md-5 px-lg-4"><a class="logo-link" target= "_blank" href="https://www.novartis.com/"><img class="img-fluid svg-ie-fix" src="https://www.logolynx.com/images/logolynx/45/45620643300e29e7c8227081b7075f91.png"></a></div>
+						<div class="logo px-3 col-6 col-md-4 col-lg-2 mr-0 px-md-5 px-lg-4"><a class="logo-link" target= "_blank" href="https://www.novartis.com/"><img class="img-fluid svg-ie-fix" src="https://static.wixstatic.com/media/db9bf7_7f3db0d912454ec3862dfdea2acc659a~mv2.jpg/v1/fill/w_800%2Ch_500%2Cal_c%2Cq_90/file.jpg"></a></div>
 						<div class="logo px-3 col-6 col-md-4 col-lg-2 mr-0 px-md-5 px-lg-4"><a class="logo-link" target= "_blank" href="https://www.genpact.com/"><img class="img-fluid svg-ie-fix" src="https://www.genpact.com/a/dist/img/Genpact_vertical_color_rgb.svg" width=80%></a></div>
 						<div class="logo px-3 col-6 col-md-4 col-lg-2 mr-0 px-md-5 px-lg-4"><a class="logo-link" target= "_blank" href="https://www.goldmansachs.com/"><img class="img-fluid svg-ie-fix" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/1200px-Goldman_Sachs.svg.png"></a></div>
 					</div>
@@ -287,12 +334,33 @@
 
 
 		
-		<section class="testimonials-section p-3 p-lg-5">
+		<section class="testimonials-section p-3 p-lg-5" id="testimonials">
 			<div class="container">
 				<h2 class="section-title font-weight-bold mb-5">Testimonials</h2>
 				
 				<div class="testiomonial-carousel-container">
 					<div class="testimonial-carousel  tiny-slider">
+
+	                    <div class="item">
+							<div class="item-inner">
+								<div class="quote-holder">
+									<blockquote class="quote-content">
+										Ayan brings his heart and mind to his work consistently in every interaction. He has a lot of passion towards having an impact. He also enjoys a strong technical expertise in data science, that is coupled with speak up and attention to details, that makes him a key team member, and a valuable sounding board for myself and many other colleagues. He is definitely a reliable team member, and I always know that he will exceed our initial agreed expectations. Am enjoying working with Ayan and wish him all the best in his career.
+									</blockquote>
+									<i class="fas fa-quote-left"></i>
+								</div><!--//quote-holder-->
+								<div class="source-holder">
+									<div class="source-profile">
+										<img src="https://media-exp3.licdn.com/dms/image/C4D03AQG9EK3zKmTc8g/profile-displayphoto-shrink_100_100/0/1614274356293?e=1628726400&v=beta&t=bqNrCnUKEFIqiLh69FGD1jSub7udTRXcEAcKqbPX8qE" alt="image"/>
+									</div>
+									<div class="meta">
+										<div class="name">Sherif Nour</div>
+										<div class="info">Head of Commercial Excellence AMACO, Novartis</div>
+									</div>
+								</div>
+							</div><!--//item-inner-->
+						</div><!--//item-->						
+
 	                    <div class="item">
 							<div class="item-inner">
 								<div class="quote-holder">
@@ -307,7 +375,7 @@
 									</div>
 									<div class="meta">
 										<div class="name">Tamer Basha</div>
-										<div class="info">Head of Cluster, Novartis</div>
+										<div class="info">Head of Regional Cluster, Novartis</div>
 									</div>
 								</div>
 							</div><!--//item-inner-->
@@ -410,7 +478,7 @@
 ############################################################################################################################## -->
 
 
-		<section class="featured-section p-3 p-lg-5">
+		<section class="featured-section p-3 p-lg-5" id="projects">
 			<div class="container">
 				<h2 class="section-title font-weight-bold mb-5">Projects</h2>
 				<div class="row">
@@ -774,6 +842,11 @@
     });
 </script>
 
+<script>
+	$("#pop").on("click", function() {
+	$('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+	});
+</script>
 	
 </body>
 </html> 
