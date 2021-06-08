@@ -85,9 +85,13 @@
 						<img class="profile-image mb-3 rounded-circle mx-auto" src="https://media-exp1.licdn.com/dms/image/C4D03AQECVIsiANvxhg/profile-displayphoto-shrink_800_800/0/1607660516770?e=1624492800&v=beta&t=Sk53NB_2-iv_p711Amyd4kb5t1c951L23SseEK-Oyyc" alt="image" >			
 						
 						<div class="bio mb-3">
-							<span style="font-size:20px">Hello,</span> <br> My name is Ayan and I'm a Data Scientist by profession and a traveller by passion. <br> Thanks for visiting my Website! <br> 
+							<span style="font-size:20px">Hello,</span> <br>
+							Thanks for visiting my Website! <br>
+							My name is Ayan and I'm a Data Scientist by profession and a traveller by passion. <br> 
 							Embedded in this website, you will find my work details, my portfolio and the Data Science Projects that I have undertaken.
-							You would also find links to the websites that I have designed & developed. Happy Exploring. <br><br> Use the links below or the email button below to reach out to me :)
+							You would also find links to the websites that I have designed & developed. Happy Exploring. 
+							<br><br> 
+							Use the links below or the email button below to reach out to me :)
 						</div><!--//bio-->
 
 						<ul class="social-list list-inline py-2 mx-auto">
@@ -167,7 +171,8 @@
 						</div><!--//bio-->
 						
 						<div class="mb-4">
-							<a class="btn btn-primary mb-3" href="#" id="pop"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline"></span>View Resume</a>
+							
+							<button class="btn btn-primary mb-3" data-toggle="modal" data-target="#imagemodal"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline"></span>View Resume</button>
 							<a class="btn btn-secondary mr-2 mb-3" href="https://do2blehelix.github.io/the-ml-handbook"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline">View</span> My Machine Learning Blog</a>
 							
 							<!-- Modal -->
@@ -844,11 +849,6 @@
     });
 </script>
 
-<script>
-	$("#pop").on("click", function() {
-	$('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
-	});
-</script>
 	
 </body>
 </html> 
