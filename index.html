@@ -1,0 +1,1127 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+<!-- #############################################################################################################################
+###################################################   HEAD   #####################################################################
+############################################################################################################################## -->
+
+<head>
+	<title>Ayan Banerjee - My Portfolio Website</title>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="My Portfolio Website">
+	<meta name="author" content="Ayan Banerjee">    
+	<link rel="shortcut icon" href="favicon.ico"> 
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	
+	<!-- FontAwesome JS -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.min.css">
+
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="style.css">
+
+	<style>
+		.underline {
+			position: relative;
+			display: inline-block;
+			top:23px;
+			height: 4px;
+			background-color: white;
+			/* animation: blinking .4s infinite; */
+			-webkit-animation: blinking 0.4s infinite backwards alternate;
+			}
+
+		@-webkit-keyframes blinking {
+		0%   { opacity: 1; }
+		100% { opacity: 0; }
+		}
+
+		@keyframes blinking {
+		0%   { opacity: 1; }
+		100% { opacity: 0; }
+		}
+
+		.modIcon{
+			font-size: 50px;
+			float: right;
+			color: #54B689;
+			right: 15px;
+			top: 10px;
+			position: absolute;
+			}
+			
+
+	</style>
+
+</head> 
+
+
+<!-- #############################################################################################################################
+###################################################   SIDEBAR / NAVBAR   #########################################################
+############################################################################################################################## -->
+
+
+<body>
+	
+	<header class="header text-center">	    
+		<div class="force-overflow">
+			<h1 class="blog-name pt-lg-4 mb-0" style="font-size:25px"> Ayan Banerjee <i class="fas fa-chevron-right"></i><span class="underline">&ensp;&nbsp;</span> </h1>
+			
+			<nav class="navbar navbar-expand-lg navbar-dark" >
+				
+				<button class="navbar-toggler" style="opacity:0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon" ></span>
+				</button>
+				
+				<div id="navigation" class="collapse navbar-collapse show flex-column" >
+					<div class="profile-section pt-3 pt-lg-0">
+						<img class="profile-image mb-3 rounded-circle mx-auto" src="https://media-exp3.licdn.com/dms/image/C4D03AQECVIsiANvxhg/profile-displayphoto-shrink_800_800/0/1607660516770?e=1631145600&v=beta&t=pBSTAVPPfECCxwp69s4c9OHI0Cy0hHmrPaq7m-33AvY" alt="image" >			
+						
+						<div class="bio mb-3">
+							<span style="font-size:20px">Hello,</span> <br>
+							Thanks for visiting my Website! <br>
+							My name is Ayan and I'm a Data Scientist by profession and a traveller by passion. <br> 
+							Embedded in this website, you will find my work details, my portfolio and the Data Science Projects that I have undertaken.
+							You would also find links to the websites that I have designed & developed. Happy Exploring. 
+							<br><br> 
+							Use the links below or the email button below to reach out to me :)
+						</div><!--//bio-->
+
+						<ul class="social-list list-inline py-2 mx-auto">
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/ayanbanerjeek/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://github.com/do2blehelix" target="_blank"><i class="fab fa-github-alt fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://medium.com/@do2blehelix" target="_blank"><i class="fab fa-medium fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.kaggle.com/do2blehelix" target="_blank"><i class="fab fa-kaggle fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-codepen fa-fw"></i></a></li>
+						</ul><!--//social-list-->
+						<hr> 
+					</div><!--//profile-section-->
+					
+					<ul class="navbar-nav flex-column text-left">
+						<li class="nav-item active">
+							<a class="nav-link" href="#about"><i class="fas fa-user fa-fw mr-2"></i>About Me<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#portfolio"><i class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#testimonials"><i class="far fa-thumbs-up fa-fw mr-2"></i>Testimonials</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects"><i class="fas fa-project-diagram fa-fw mr-2"></i>Projects</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-cogs fa-fw mr-2"></i>More Pages
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="the-ml-handbook">My ML Hub</a>
+								<a class="dropdown-item" href="https://travelengine.co">My Travel Blog</a>
+								<a class="dropdown-item" href="https://hungryaf.in">My Food Blog</a>
+							</div>
+						</li>
+					</ul>
+					
+					<div class="my-2">
+						<a class="btn btn-primary" href="mailto:ayanbanerjee.k@outlook.com" target="_blank"><i class="fas fa-paper-plane mr-2"></i>Reach Out To Me</a>
+					</div>
+					
+	
+					<!--//<div class="dark-mode-toggle text-center w-100">
+						<hr class="mb-4">
+					    <h4 class="toggle-name mb-3 "><i class="fas fa-adjust mr-1"></i>Dark Mode</h4>
+					    
+					    <input class="toggle" id="darkmode" type="checkbox">
+					    <label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+					    
+					</div>dark-mode-toggle-->
+					
+				</div>
+			</nav>
+		</div><!--//force-overflow-->
+	</header>
+
+	
+<!-- #############################################################################################################################
+###################################################   SUMMARY   ##################################################################
+############################################################################################################################## -->
+
+
+	<div class="main-wrapper">
+		
+		<section class="about-me-section p-3 p-lg-5 theme-bg-light">
+			<div class="container">
+				<div class="profile-teaser media flex-column flex-lg-row">
+					
+					<div class="media-body">
+						<h2 class="name font-weight-bold mb-1" id="about">Ayan Banerjee</h2>
+						<div class="tagline mb-3" style="color: #54b689;">Manager, Data Science</div>
+						<div class="bio mb-4">
+							Client-centric, multitask professional with <strong>7+ years</strong> of experience possessing excellent analytical and logical skills. 
+							Presently engaged as a <strong>Manager</strong> in the <strong>Data Science</strong> team within Novartis, a leading pharma brand across the globe. 
+							Proficient in <strong>Project Management</strong> and led a group of analysts in the team. 
+							Well versed in a broad array of statistical and <strong>Machine Learning</strong> algorithms.
+						</div><!--//bio-->
+						
+						<div class="mb-4">
+							
+							<button class="btn btn-primary mb-3" data-toggle="modal" data-target="#imagemodal"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline"></span>View Resume</button>
+							<a class="btn btn-secondary mr-2 mb-3" href="https://do2blehelix.github.io/the-ml-handbook"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline">View</span> My Machine Learning Blog</a>
+							
+							<!-- Modal -->
+							<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-xl">
+									<div class="modal-content">
+										<div class="modal-header">
+										<h4 class="modal-title" id="myModalLabel">Resume Preview</h4>
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										</div>
+										<div class="modal-body">
+											<img class="img-fluid" src="https://ajvphhwjko.cloudimg.io/v7/https://docs.google.com/presentation/d/1vE78X_QrQiLsUNivDO6TEPbi1qW14pueiuHs1TqWsgo/export/pdf">
+										</div>
+										<div class="modal-footer">
+											<a href="https://docs.google.com/presentation/d/1vE78X_QrQiLsUNivDO6TEPbi1qW14pueiuHs1TqWsgo/export/pdf">
+											<button class="btn btn-default"> <i class="fas fa-download"></i> Download Resume (PDF Version)</button>
+											</a>
+										</div>
+								  	</div>
+								</div>
+							</div>
+
+						</div>
+					</div><!--//media-body-->
+					<img class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" src="https://image.freepik.com/free-vector/pitch-meeting-concept-illustration_114360-5910.jpg" alt="">
+				</div>
+			</div>
+		</section><!--//about-me-section-->
+
+
+<!-- #############################################################################################################################
+###################################################   PORTFOLIO   ################################################################
+############################################################################################################################## -->
+
+		
+		<section class="overview-section p-3 p-lg-5">
+			<div class="container">
+				<h1 class="section-title font-weight-bold mb-3" id="portfolio">What I do</h1>
+				<div class="section-intro mb-5">I have more than 7 years' experience building Data Science Projects and designing solutions. Below are the stacks I have been working with:</div>
+				<div class="row">
+
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><img src="https://img.icons8.com/color/40/000000/python.png"/><img src="https://img.icons8.com/windows/40/266abd/r-project.png"/></div>
+							<h3 class="item-title">Machine Learning Toolset</h3>
+							<div class="item-desc">
+								I have worked in Python, R and SAS with Python being the more used data analysis toolkit.
+								Apart from the usual ones, I have experience in Orange and Alteryx.
+							</div>
+								<li class="list-inline-item"><span class="badge badge-info badge-pill">Python</span></li>
+								<li class="list-inline-item"><span class="badge badge-info badge-pill">R</span></li>
+								<li class="list-inline-item"><span class="badge badge-info badge-pill">SAS</span></li>
+						</div><!--//item-inner-->
+
+					</div><!--//item-->
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><img src="https://img.icons8.com/color/40/000000/tensorflow.png"/><img src="https://img.icons8.com/material-sharp/40/000000/django.png"/></div>
+							<h3 class="item-title">Machine Learning Algorithms</h3>
+							<div class="item-desc">
+								I have worked with a wide variety of ML Algorithms, both Supervised and Unsupervised -
+								Regression, Classification, SVM, Random Forest, Catboost, KNN, K-Means, DBScan, Deep Learning Neural Networks
+							</div>
+								<!-- <li class="list-inline-item"><span class="badge badge-info badge-pill">Tensorflow</span></li>
+								<li class="list-inline-item"><span class="badge badge-info badge-pill">Pytorch</span></li>
+								<li class="list-inline-item"><span class="badge badge-info badge-pill">Keras</span></li> -->
+                        </div><!--//item-inner-->
+
+					</div><!--//item-->
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><img src="https://img.icons8.com/fluent/40/000000/project-setup--v2.png"/><img src="https://img.icons8.com/fluent/40/000000/planner.png"/></div>
+							<h3 class="item-title">Stakeholder & Project Management</h3>
+							<div class="item-desc">
+								My interaction has been with Global stakeholders ranging from USA to Japan to Europe and South East Asia. 
+								Understanding the different needs of each country and brand helped me provide customized solutions.
+							</div>
+						</div><!--//item-inner-->
+					</div><!--//item-->
+					
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><img src="https://img.icons8.com/fluent/40/000000/conference-call.png"/><img src="https://img.icons8.com/bubbles/50/000000/people-group-bill--v1.png"/><img src="https://img.icons8.com/color/48/000000/group-task.png"/></div>
+							<h3 class="item-title">Team Management</h3>
+							<div class="item-desc">
+								I have been leading analysts in the team to deliver consistent solutions, while providing them with the best of growth opportunities.
+								I actively take part in organizing Town-halls, Hackathons and Quizzes for all associates.  
+							</div>
+						</div><!--//item-inner-->
+					</div><!--//item-->
+					
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><img src="https://img.icons8.com/dusk/40/000000/presentation--v1.png"/><img src="https://img.icons8.com/color/40/000000/terms-and-conditions.png"/><img src="https://img.icons8.com/color/40/000000/handshake.png"/></i></div>
+							<h3 class="item-title">Storyboarding</h3>
+							<div class="item-desc">
+								Storytelling is an art that I am keen at implementing. A well told story backed by data can provide impact for the right outcomes. 
+								The right presentation is key to influencing mindsets with the right mix of information, images and data.
+							</div>
+						</div><!--//item-inner-->
+					</div><!--//item-->
+
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><img src="https://img.icons8.com/fluent/40/000000/web-advertising.png"/><img src="https://img.icons8.com/fluent/40/000000/web-analystics.png"/><img src="https://img.icons8.com/fluent/40/000000/filter.png"/></div>
+							<h3 class="item-title">Digital Marketing & Data Analytics</h3>
+							<div class="item-desc">
+								I have been interacting with Digital Marketing, not only for my porfessional work where I analysed multichannel engagement, but also in my personal websites. 
+								Having a first hand experience give me the edge. </div>
+						</div><!--//item-inner-->
+					</div><!--//item-->
+					
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><img src="https://img.icons8.com/cute-clipart/40/000000/flask.png"/><i class="fab fa-html5 mr-2"></i><i class="fab fa-css3-alt mr-2"></i><i class="fab fa-sass"></i></div>
+							<h3 class="item-title">Web Application Development</h3>
+							<div class="item-desc">
+								Business analytics is moving fast towards integrated insights and reports. My domain knowlegde of HTML and the python web framework allows me to design 
+								and develop easily accessible business use case dashboards. </div>
+						</div><!--//item-inner-->
+					</div><!--//item-->
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><img src="https://img.icons8.com/color/40/000000/amazon-web-services.png"/><img src="https://img.icons8.com/color/40/000000/azure-1.png"/><img src="https://img.icons8.com/color/40/000000/git.png"/><img src="https://img.icons8.com/ios-filled/40/000000/github.png"/><img src="https://img.icons8.com/color/40/000000/gitlab.png"/></div>
+							<h3 class="item-title">Cloud Data Infrastructure</h3>
+							<div class="item-desc">
+								Data is moving to the cloud. I posess the knowledge of cloud infrastructure and version control which is important to scale a project 
+								while working with multiple collaborators. 
+							</div>
+						</div><!--//item-inner-->
+					</div><!--//item-->
+				</div><!--//row-->
+
+				
+			</div><!--//container-->
+		</section>
+    
+        <div class="container"><hr></div>
+        
+
+<!-- #############################################################################################################################
+###################################################   COMPANIES   ################################################################
+############################################################################################################################## -->
+
+
+		<section class="testimonials-section p-3 p-lg-5">
+			<div class="container">
+					<h3 class="section-title font-weight-bold mb-5">Companies I've Worked With</h3>
+					<div class="logos row mb-5">
+						<div class="logo px-3 col-6 col-md-4 col-lg-2 mr-0 px-md-5 px-lg-4"><a class="logo-link" target= "_blank" href="https://www.novartis.com/"><img class="img-fluid svg-ie-fix" src="https://static.wixstatic.com/media/db9bf7_7f3db0d912454ec3862dfdea2acc659a~mv2.jpg/v1/fill/w_800%2Ch_500%2Cal_c%2Cq_90/file.jpg"></a></div>
+						<div class="logo px-3 col-6 col-md-4 col-lg-2 mr-0 px-md-5 px-lg-4"><a class="logo-link" target= "_blank" href="https://www.genpact.com/"><img class="img-fluid svg-ie-fix" src="https://www.genpact.com/a/dist/img/Genpact_vertical_color_rgb.svg" width=80%></a></div>
+						<div class="logo px-3 col-6 col-md-4 col-lg-2 mr-0 px-md-5 px-lg-4"><a class="logo-link" target= "_blank" href="https://www.goldmansachs.com/"><img class="img-fluid svg-ie-fix" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/1200px-Goldman_Sachs.svg.png"></a></div>
+					</div>
+					
+					
+				</div>
+		</section>
+
+            <div class="container"><hr></div>
+
+
+
+<!-- #############################################################################################################################
+###################################################   TESTIMONIALS   #############################################################
+############################################################################################################################## -->
+
+
+		
+		<section class="testimonials-section p-3 p-lg-5" id="testimonials">
+			<div class="container">
+				<h2 class="section-title font-weight-bold mb-5">Testimonials</h2>
+				
+				<div class="testiomonial-carousel-container">
+					<div class="testimonial-carousel  tiny-slider">
+
+	                    <div class="item">
+							<div class="item-inner">
+								<div class="quote-holder">
+									<blockquote class="quote-content">
+										Ayan brings his heart and mind to his work consistently in every interaction. He has a lot of passion towards having an impact. He also enjoys a strong technical expertise in data science, that is coupled with speak up and attention to details, that makes him a key team member, and a valuable sounding board for myself and many other colleagues. He is definitely a reliable team member, and I always know that he will exceed our initial agreed expectations. Am enjoying working with Ayan and wish him all the best in his career.
+									</blockquote>
+									<i class="fas fa-quote-left"></i>
+								</div><!--//quote-holder-->
+								<div class="source-holder">
+									<div class="source-profile">
+										<img src="https://media-exp3.licdn.com/dms/image/C4D03AQG9EK3zKmTc8g/profile-displayphoto-shrink_100_100/0/1614274356293?e=1631145600&v=beta&t=AStQxQ1aO3-oL-uSuOq5RmAMG_q7NeBfKl1XqTDoPqw" alt="image"/>
+									</div>
+									<div class="meta">
+										<div class="name">Sherif Nour</div>
+										<div class="info">Head of Commercial Excellence AMACO, Novartis</div>
+									</div>
+								</div>
+							</div><!--//item-inner-->
+						</div><!--//item-->						
+
+	                    <div class="item">
+							<div class="item-inner">
+								<div class="quote-holder">
+									<blockquote class="quote-content">
+										Ayan is not only hard worker but really smart and has great deal of perseverance. We tackled complex projects together in areas like Machine learning, python coding and others. He always found a way to make things work. His interests about traveling is always nice to discuss after long hours of working and he can give you advises on that too.
+									</blockquote>
+									<i class="fas fa-quote-left"></i>
+								</div><!--//quote-holder-->
+								<div class="source-holder">
+									<div class="source-profile">
+										<img src="https://media-exp3.licdn.com/dms/image/C5603AQGTXH5hEwYIGQ/profile-displayphoto-shrink_100_100/0/1611875066945?e=1631145600&v=beta&t=iGHOR-V7YUyeTonyEq80-6dVtOOsKH4CBbp7UG8nDvE" alt="image"/>
+									</div>
+									<div class="meta">
+										<div class="name">Tamer Basha</div>
+										<div class="info">Head of Regional Cluster, Novartis</div>
+									</div>
+								</div>
+							</div><!--//item-inner-->
+						</div><!--//item-->
+						
+						<div class="item">
+							<div class="item-inner">
+								<div class="quote-holder">
+									<blockquote class="quote-content">
+										His deep knowledge & understanding of state -of -the -art Analytics & Machine Learning also came very handy to me. As a very effective SPOC & mentor, he provided me just the right guidance also while giving me enough space to come up with my own creative solutions. Thus it was a great learning opportunity to work with him. His contribution was also pivotal in effective Project Planning & Management.
+									</blockquote>
+									<i class="fas fa-quote-left"></i>
+								</div><!--//quote-holder-->
+								<div class="source-holder">
+									<div class="source-profile">
+										<img src="https://media-exp3.licdn.com/dms/image/C5103AQFYFi2Oo8W2xQ/profile-displayphoto-shrink_100_100/0/1563858562649?e=1631145600&v=beta&t=Xqp65uBXreUayAYnQaH7eUk212shZezN-Vs08hT2F-M" alt="image"/>
+									</div>
+									<div class="meta">
+										<div class="name">Souradeep Debnath</div>
+										<div class="info">Analyst, Novartis</div>
+									</div>
+								</div>
+							</div><!--//item-inner-->
+						</div><!--//item-->
+						
+						<div class="item">
+							<div class="item-inner">
+								<div class="quote-holder">
+									<blockquote class="quote-content">
+										I have worked with Ayan in an engagement which involved multiple projects with multiple stakeholders across different cultures and geographies. He demonstrated excellent project and stakeholder management skills. He has in depth knowledge of his field and good people management skills. It is a pleasure working with him.
+									</blockquote>
+									<i class="fas fa-quote-left"></i>
+								</div><!--//quote-holder-->
+								<div class="source-holder">
+									<div class="source-profile">
+										<img src="https://media-exp3.licdn.com/dms/image/C5103AQGr7HtUv8NO1Q/profile-displayphoto-shrink_100_100/0/1583558727334?e=1631145600&v=beta&t=mnbARIEKFKkFPvJSNeCwkeVvR1wLuOUPMCzLImLo53o" alt="image"/>
+									</div>
+									<div class="meta">
+										<div class="name">Shobhit Khemaria</div>
+										<div class="info">Manager, Novartis</div>
+									</div>
+								</div>
+						    </div><!--//item-inner-->
+						</div><!--//item-->
+						
+						<div class="item">
+							<div class="item-inner">
+								<div class="quote-holder">
+									<blockquote class="quote-content">
+										Ayan is one of the most dedicated professionals I’ve worked with. He is willing to put that extra help whenever you need it. His expertise as a Data Scientist is extensive and his skills as a Project Manager is commendable. A great colleague, Ayan, will be a valuable asset to any company.
+									</blockquote>
+									<i class="fas fa-quote-left"></i>
+								</div><!--//quote-holder-->
+								<div class="source-holder">
+									<div class="source-profile">
+										<img src="https://media-exp3.licdn.com/dms/image/C5603AQG1bz7zYXDXTA/profile-displayphoto-shrink_100_100/0/1601635549800?e=1631145600&v=beta&t=XdUuJvtNj4PbEYXCX8AMSWDtA4Lxjvgx7RjjVVSMfDk" alt="image"/>
+									</div>
+									<div class="meta">
+										<div class="name">Suchita Dubey</div>
+										<div class="info">Senior Associate Manager</div>
+									</div>
+								</div>
+						    </div><!--//item-inner-->
+						</div><!--//item-->
+						
+						<div class="item">
+							<div class="item-inner">
+								<div class="quote-holder">
+									<blockquote class="quote-content">
+										An excellent colleague. A thorough professional. Once given a task does it to the fullest. Reliable and dedicated worker and Leader with great multi tasking abilities.
+									</blockquote>
+									<i class="fas fa-quote-left"></i>
+								</div><!--//quote-holder-->
+								<div class="source-holder">
+									<div class="source-profile">
+										<img src="https://media-exp3.licdn.com/dms/image/C4D03AQGfQnAPliXptg/profile-displayphoto-shrink_100_100/0/1593323524958?e=1631145600&v=beta&t=mFh38-JHbP2f7qHVDkvEczBusEAi4cdDySQ7uV5nQFg" alt="image"/>
+									</div>
+									<div class="meta">
+										<div class="name">Rishi Prakash</div>
+										<div class="info">AV SME and Project Manager, Goldman Sachs</div>
+									</div>
+								</div>
+						    </div><!--//item-inner-->
+						</div><!--//item-->
+						
+
+					</div><!--//testimonial-carousel-->	
+				</div><!--//testimonial-carousel-container-->	
+			</div><!--//container-->
+		</section><!--//testimonials-section-->
+		
+
+		<div class="container"><hr></div>
+		
+
+
+
+<!-- #############################################################################################################################
+###################################################   PROJECTS   #################################################################
+############################################################################################################################## -->
+
+
+		<section class="featured-section p-3 p-lg-5" id="projects">
+			<div class="container">
+				<h2 class="section-title font-weight-bold mb-5">Projects</h2>
+				<div class="row">
+
+
+					<!-- ##################### PROJECT 1 ##################### -->
+
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-lg-4 card-img-holder">
+									<img src="https://cdn.technologyadvice.com/wp-content/uploads/2020/06/AdobeStock_268979480-Converted-01-700x408.png" height=100% class="card-img" alt="image" style="object-fit:cover">
+								</div>
+								<div class="col-lg-8">
+									<div class="card-body">
+										<h5 class="card-title"><a data-toggle="modal" data-target="#myModal1" class="theme-link">Japan Segmentation</a></h5>
+										<p class="card-text">Clustering and Segmentation approach for geo level medical zones to deliver specific insights and recommendations.</p>
+										<p class="card-text"><small class="text-muted">Client: Novartis Japan Hematology</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<div class="link-mask-text">
+									<a class="btn btn-secondary"  data-toggle="modal" data-target="#myModal1">
+										<i class="fas fa-eye mr-2"></i>View Project Details 
+									</a>
+								</div>
+							</div><!--//link-mask-->
+						</div><!--//card-->
+					</div><!--//col-->
+
+
+					<div class="modal fade" id="myModal1" role="dialog">
+						<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title"> <i class="fas fa-hospital-user mx-3 modIcon"></i> Risk-based Approach in Benign/chronic hematology for Optimization of Workloads</h4>
+							</div>
+							<div class="modal-body">
+								<h5> <i class="fas fa-question-circle" style="color:darkgoldenrod"></i> &nbsp; Business Objective </h5> 
+									<p style="font-size:14px">
+									Integrate different data sources like Novartis internal data, DDD, Takumi-San etc. to get complete mapping of Haematologists to Hospitals and Hospitals to SMZs.
+									Cluster SMZs on the basis of the Haematologists to patient ratio and other features.
+									Develop a dashboard with a geo plot depicting the different SMZs and their segmentation for targeting.
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-backward" style="color:darkgoldenrod"></i> &nbsp; Context </h5> 
+									<p style="font-size:14px">
+									Due to lack of dedicated HEM clinics and ageing population, the number of patients outweighs Haematologists. This results in delay of care for high risk patients. Free-access allows less severe patients to visit specialists. Current data on the hospitals, HCPs, patients etc. exists in silos and is not streamlined. 
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-clinic-medical" style="color:darkgoldenrod"></i> &nbsp; Business Outcome </h5>
+									<p style="font-size:14px">
+									Enable all hematology disease patients to receive optimal diagnosis and treatment by supporting hematologists to manage workload with task-sharing approach.
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-database" style="color:darkgoldenrod"></i> &nbsp; Data Sources </h5>
+									<p style="font-size:14px"> 
+									Demographic: Population, Age, Area, Population Density, Binned Age, Projected Population <br>
+									Medical: Patient Count, Inpatient, Outpatient, Doctors, Doctors/capita, Nursing Facilities, No of Clinics, General Doctors, Hematologists, Specialist Count, No of Specialists in each Therapy, etc <br>
+									Sales 
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-road" style="color:darkgoldenrod"></i> &nbsp; Approach </h5> 
+									<ul style="font-size:14px">
+									<li> Integrate different data sources like Novartis internal data, DDD, Takumi-San etc. to get complete mapping of Haematologists to Hospitals and Hospitals to SMZs.
+									<li> Segregate variables based on Supply and Demand (Available slots vs Sales). This is done to obtain ratio later.
+									<li> Analyse the characteristics of SMZs and cluster on the basis of the Haematologists to patient ratio and other important latent features.
+									<li> Calculate (feature engineer) slope of yearly variables (population2015-16-17-18) to capture increase/decrease in trends and use them as variables.
+									<li> Iterate with different methodologies of clustering including K-Means, DBScan, OPTICS, BIRCH, Spectral Clustering, Agglomerative Clustering, and Gaussian Mixture Models among others.
+									<li> Develop a python dash based dashboard with a geo plot depicting the different SMZs and color coded segments.
+									</ul>
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-code-branch" style="color:darkgoldenrod"></i> &nbsp; Algorithms </h5>
+									<p style="font-size:14px"> <b>Algorithms:</b> K-Means, DBScan, OPTICS, BIRCH, Spectral Clustering, Agglomerative, Gaussian Mixture Models <br>
+									<b>Validation:</b> Silhouette Score, Davies Bouldin Score, Calinski Harabasz Score
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-bullseye" style="color:darkgoldenrod"></i> &nbsp; Project Outcome </h5> 
+									<p style="font-size:14px">Clustering and Implementation was done efficiently.Results were specific to <strong>target 9% of SMZ</strong> to <strong>affect 42% hematologists</strong> and <strong>helping 32% patients</strong> in Japan								
+								<hr style="margin:20px">								
+								<h5> <i class="fas fa-trophy" style="color:darkgoldenrod"></i> &nbsp; Awards </h5> 
+									<p style="font-size:14px">BOLD4CURE Award Novartis
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+						</div>
+					</div>
+
+
+
+					<!-- ##################### PROJECT 2 ##################### -->
+
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-lg-4 card-img-holder">
+									<img src="https://miro.medium.com/max/1000/1*GZtfpHMxf03765DlVaxohg.png" class="card-img" height=100% alt="image" style="object-fit:cover">
+								</div>
+								<div class="col-lg-8">
+									<div class="card-body">
+										<h5 class="card-title"><a data-toggle="modal" data-target="#myModal2" class="theme-link">Pricing Engine</a></h5>
+										<p class="card-text">Exploratory Data Analysis to a Front end Web Application. This project revolved around collating price data to provide the right product price insights. </p>
+										<p class="card-text"><small class="text-muted">Client: Novartis Global Pricing (Oncology)</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<div class="link-mask-text">
+									<a class="btn btn-secondary"  data-toggle="modal" data-target="#myModal2">
+										<i class="fas fa-eye mr-2"></i>View Project Details 
+									</a>
+								</div>
+							</div><!--//link-mask-->
+						</div><!--//card-->
+					</div><!--//col-->
+
+
+					<div class="modal fade" id="myModal2" role="dialog">
+						<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title"><i class="fas fa-hand-holding-usd mx-3 modIcon"></i> Global Product Pricing Strategy</h4>
+							</div>
+							<div class="modal-body">
+								<h5> <i class="fas fa-question-circle" style="color:darkgoldenrod"></i> &nbsp; Business Objective </h5> 
+									<p style="font-size:14px"> 
+									To develop and distribute a unified web application for Global Pricing Strategy team for Novartis Oncology that helps users decide a competitive price for a new lauch drug by comparing Pricing Analogs across the Oncology market.
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-backward" style="color:darkgoldenrod"></i> &nbsp; Context </h5> 
+									<p style="font-size:14px">
+									Pricing a drug is the key factor during a product launch. The Global Pricing Strategy team wants to have an analytical approach to setting the right price of a to-be-launching drug backed by data and analytics. The right price will be a combination of characteristics from a set of already launched drug analogs.
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-clinic-medical" style="color:darkgoldenrod"></i> &nbsp; Business Outcome </h5>
+									<ul style="font-size:14px">
+									<li> How to price the newly launched product and look into their projected sales and price evolution?
+									<li> What are the best suited analogues for the brand that could help give a directional on price ?
+									<li> Which are the characteristics that drive pricing decisions in different disease areas? 
+									</ul>
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-database" style="color:darkgoldenrod"></i> &nbsp; Data Sources </h5>
+									<p style="font-size:14px"> 
+									<b>IQVIA, PRICENTRIC, KANTAR, IPSOS, FDA, European Medicines Agency, ClinicalTrials.gov </b>
+									<br>
+									Therapy/Indication: Therapy Area, Anatomy, Brief & Detailed Indication, Line of Therapy, Order of Entry, Orphan Launch, Immunotherapy, Chemotherapy, Targeted therapy <br>
+									Molecule: Molecule Type, Mechanism of Action, Order of Entry  <br>
+									Patient Characteristics: Onset Age, Prevalance, 5yr Survival, Disease Type  <br>
+									Efficacy & Safety: Overall Survival (OS), Progression Free Survival (PFS), Overall Response Rate (ORR), CR, Quality of Life, Clinical Trial Type, No of Patients in Trial, Adverse Events (Grade3/4), % discontinued, % Severe Adverse Events <br>
+									Approval: Phase of Approval, Fast Track/Breakthrough/Conditional/Priority/Accelerated Approval <br>
+									Combination Drugs: Number of Combi Molecules, Combi Drug Name, Type of Combi Drug, Combi (Targeted therapy/chemo), Combi company, Cost <br>
+									Competitor: Brand, Duration of Treatment, Chemo/Biologic, Offlabel, Launch Price
+									
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-road" style="color:darkgoldenrod"></i> &nbsp; Approach </h5> 
+									<ul style="font-size:14px">
+									<li>Derive Importance for key features that drive sales (Catboost Model)
+									<li>Filter brands based on selected country and product type
+									<li>Calculate similarity between the launch brand and existing brands in the database (Gower dissimilarity metric)
+									<li>Identify top K analogs using K Nearest Neighbors and Gower dissimilarity
+									<li>Determine the price bracket and show pricing evolution for the analogs
+									<li>Show analogs in a tabular format allowing users to select particular analogs of choice 
+									<li>Show Price vs Sales Evolution similarity characteristics 
+									<li>Show SHAP value based contribution of each variable to arrive at the projected price								
+									</ul>
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-code-branch" style="color:darkgoldenrod"></i> &nbsp; Algorithms </h5>
+									<p style="font-size:14px"> 
+									<b>Regression</b> Random Forest, Catboost for Feature Importance and Predicted Pricing<br>
+									KNN Model with Gower Dissimilarity <br>
+									SHAP values for contribution plot
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-bullseye" style="color:darkgoldenrod"></i> &nbsp; Project Outcome </h5> 
+									<p style="font-size:14px">Web application was designed in Python Plotly Dash framework and deployed to individual system using Docker
+								<hr style="margin:20px">								
+								<h5> <i class="fas fa-trophy" style="color:darkgoldenrod"></i> &nbsp; Awards </h5> 
+									<p style="font-size:14px">COIN E-Avishkaar runners up ; Global Value Access Innovation Award
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+						</div>
+					</div>
+
+
+					<!-- ##################### PROJECT 3 ##################### -->
+
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-lg-4 card-img-holder">
+									<img src="https://jfitzgeraldgroup.com/wp-content/uploads/2019/01/Results-On-Investment-ROI-1080x675.jpg" height=100% class="card-img" alt="image" style="object-fit:cover">
+								</div>
+								<div class="col-lg-8">
+									<div class="card-body">
+										<h5 class="card-title"><a data-toggle="modal" data-target="#myModal3" class="theme-link">ROI Analysis</a></h5>
+										<p class="card-text">Analysis of individual Digital and Non Personal Campaigns for Novartis USA Commercial Marketing and recommendation on Return on Investment.</p>
+										<p class="card-text"><small class="text-muted">Client: USA Commercial Acceleration</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<div class="link-mask-text">
+									<a class="btn btn-secondary"  data-toggle="modal" data-target="#myModal3">
+										<i class="fas fa-eye mr-2"></i>View Project Details 
+									</a>
+								</div>
+							</div><!--//link-mask-->
+						</div><!--//card-->
+					</div><!--//col-->
+
+
+					<div class="modal fade" id="myModal3" role="dialog">
+						<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title"><i class="fas fa-file-invoice-dollar mx-3 modIcon"></i>Campaign Evaluation and Return on Investment Analysis</h4>
+							</div>
+							<div class="modal-body">
+								<h5> <i class="fas fa-question-circle" style="color:darkgoldenrod"></i> &nbsp; Business Objective </h5> 
+									<p style="font-size:14px">To evaluate digital and non-digital promotional campaigns and find out the Return on Investment
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-backward" style="color:darkgoldenrod"></i> &nbsp; Context </h5> 
+									<p style="font-size:14px">
+									The US Brand teams run digital promotions to HCPs and want to evaluate if a particular promotion was effective in generating sales and better reach patients.	
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-clinic-medical" style="color:darkgoldenrod"></i> &nbsp; Business Outcome </h5>
+									<p style="font-size:14px">
+									Generate awareness about a particular brand to specialist HCPs so that more patients are served.
+									HCP List Created > Forwarded to Brand Team > List forwarded to Vendors > Target Test Group is created > Campaign Runs (3 mo) > Engagement List Forwarded back > Run Analysis > Compare Test with Control
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-database" style="color:darkgoldenrod"></i> &nbsp; Data Sources </h5>
+									<p style="font-size:14px"> 
+									Physican: TRx, NRx, NBRx Sales, Market Behaviour, Calls, Samples <br>
+									Activity: Emails / Digital Newsletters / Targeted Website Banner Ads / Professional Service Sites - Opened, Clicked Through <br>
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-road" style="color:darkgoldenrod"></i> &nbsp; Approach </h5> 
+									<p style="font-size:14px"> 
+									Starting from collating the data to delivering the recommendations in terms of ROI, the steps below list out the process:
+									<ul style="font-size:14px">
+										<li> Collate the data for the particular brand. Find the market universe.
+										<li> Data is separated based on T and C and interaction variables are created. The original variables are also left in case the interaction variables turn out insignificant
+										<li> Avg Post TRx is predicted based on PreTRx+PostMkt+PostCalls+PostSamp for both the Test and Control HCPs
+										<li> The Pre Period variables are excluded as the T and C are matched basis that and would turn up correlated in the model.
+										<li> Model is run and if the variables are insignificant/negative coefficients, the interaction variables are removed and the total variable is used
+										<li> One equation is generated with both T and C variables residing in the model. The T and C variables are separated and separate equations are generated.
+										<li> Equation_T (Y = β1.X1+.....) for Test HCPs is generated using the X as Test_Average for each of the Independent Variables
+										<li> Equation_C (Y = β1.X1+.....) for Control HCPs is generated using the X as Test_Average for each of the Independent Variables
+										<li> Use Equation_T to calculate the Post Period TRx for each Test HCP
+										<li> Use Equation_C to calculate the Post Period TRx for each Test HCP
+										<li> The difference between, Equation_T - Equation_C gives us the lift for each Test HCP, essentially saying that <b>if the Test HCPs did not recieve the campaign vs if the Test HCPs recieved the campaign</b>
+										<li> Revenue = (Lift * #HCPs * #Months * $/TRx)  ||   ROI = Revenue/Cost
+									</ul>
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-code-branch" style="color:darkgoldenrod"></i> &nbsp; Algorithms </h5>
+									<p style="font-size:14px"> 
+									Test Control Methodology (Strata/1:1 Match) <br>
+									T-test for validation <br>
+									ANCOVA based regression modeling <br>
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-bullseye" style="color:darkgoldenrod"></i> &nbsp; Project Outcome </h5> 
+									<p style="font-size:14px"> 
+									Results were provided across a wide range of Campaigns starting from Email Marketing to App based notifications. Insights gererated were aligned with full flegded Marketing Mix Models.
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<!-- ##################### PROJECT 4 ##################### -->
+
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-lg-4 card-img-holder">
+									<img src="https://www.researchgate.net/profile/Christopher-Jones-95/publication/6568692/figure/fig2/AS:667770328997899@1536220261603/Health-technology-assessment-HTA-is-an-interdisciplinary-movement.png" class="card-img" height=100% alt="image" style="object-fit:cover">
+								</div>
+								<div class="col-lg-8">
+									<div class="card-body">
+										<h5 class="card-title"><a data-toggle="modal" data-target="#myModal4" class="theme-link">Health Technology Assessment</a></h5>
+										<p class="card-text">Derive a UI based prediction classifier system to accurately classify NICE Approval </p>
+										<p class="card-text"><small class="text-muted">Client: Novartis Global Pricing</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<div class="link-mask-text">
+									<a class="btn btn-secondary"  data-toggle="modal" data-target="#myModal4">
+										<i class="fas fa-eye mr-2"></i>View Project Details 
+									</a>
+								</div>
+							</div><!--//link-mask-->
+						</div><!--//card-->
+					</div><!--//col-->
+
+
+					<div class="modal fade" id="myModal4" role="dialog">
+						<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title"><i class="fas fa-search-dollar mx-3 modIcon"></i>Health Technology Assessment</h4>
+							</div>
+							<div class="modal-body">
+								<h5> <i class="fas fa-question-circle" style="color:darkgoldenrod"></i> &nbsp; Business Objective </h5> 
+									<p style="font-size:14px"> 
+									Predicting recommendation of NICE (National Institute of Health Care and Excellence) of drug based on drug characteristics.
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-backward" style="color:darkgoldenrod"></i> &nbsp; Context </h5> 
+									<p style="font-size:14px">
+									NICE Approval is a key factor for drugs in EU. 
+									This tool shows information on <br>
+									- what is the probability of a drug being recommended by NICE? <br>
+									- how are the prediction results influenced by the drug characteristics?
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-clinic-medical" style="color:darkgoldenrod"></i> &nbsp; Business Outcome </h5>
+									<ul style="font-size:14px">
+									<li> Identification of the governing factors for NICE recommendation will help understand the dependencies.
+									<li> Equipping the Global Pricing teams with the front-end simulation dashboard enabling deeper and better insights.
+									</ul>
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-database" style="color:darkgoldenrod"></i> &nbsp; Data Sources </h5>
+									<p style="font-size:14px"> 
+									<b> NICE, IQVIA, PRICENTRIC, KANTAR, IPSOS, FDA, European Medicines Agency, ClinicalTrials.gov </b> <br>
+										Accelerated assessment (EMA),
+										Average Survival in disease,
+										Competitor Median Launch Price,
+										Duration of treatment,
+										HR QoL data availability,
+										Launch Price (30 day therapy),
+										Line of Therapy,
+										Orphan Indication at Launch,
+										ORR results,
+										OS results,
+										PFS results,
+										SAE (%),
+										Safety data (Grade III and IV AEs),
+										Safety: % of patients discontinued due to SAE,
+										RCT,
+										Comparator Choice,
+										Patient Access Scheme,
+										End of life criteria,
+										RWE data from CDF
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-road" style="color:darkgoldenrod"></i> &nbsp; Approach </h5> 
+									<ul style="font-size:14px">
+									<li>>50 Brands’ base Data merged with additional information
+									<li>100 attributes cleaned and pre-processed to generate insights
+									<li>Google What-if Analysis to train and simulate situations and generate deep dives
+									<li>Catboost base algorithm to select important features and retrain the model. Catboost classification method used to predict the training dataset and export the model results
+									<li>Dash Front end dashboard to take inputs from user based on certain characteristics of the new launch/ pending approval drug and show the outputs in terms of prediction of Approval or No Approval						
+									</ul>
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-code-branch" style="color:darkgoldenrod"></i> &nbsp; Algorithms </h5>
+									<p style="font-size:14px"> 
+									<b>Classification</b> Random Forest, Catboost <br>
+									Explainer Dashboard for plots
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-bullseye" style="color:darkgoldenrod"></i> &nbsp; Project Outcome </h5> 
+									<p style="font-size:14px">Web application was designed in Explainer Dashboard framework and deployed to individual system using Docker
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+						</div>
+					</div>
+
+
+					<!-- ##################### PROJECT 5 ##################### -->
+
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-lg-4 card-img-holder">
+									<img src="https://medicxhealth.com/wp-content/uploads/2020/07/Finding-Your-Target-HCPs-Banner.jpg" class="card-img" height=100% alt="image" style="object-fit:cover">
+								</div>
+								<div class="col-lg-8">
+									<div class="card-body">
+										<h5 class="card-title"><a data-toggle="modal" data-target="#myModal5" class="theme-link">Customer Segmentation</a></h5>
+										<p class="card-text">Derive an algorithm based HCP segmentation approach for effective serving of alternate promotionals.</p>
+										<p class="card-text"><small class="text-muted">Client: Novartis US Commercial Acceleration</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<div class="link-mask-text">
+									<a class="btn btn-secondary"  data-toggle="modal" data-target="#myModal5">
+										<i class="fas fa-eye mr-2"></i>View Project Details 
+									</a>
+								</div>
+							</div><!--//link-mask-->
+						</div><!--//card-->
+					</div><!--//col-->
+
+
+					<div class="modal fade" id="myModal5" role="dialog">
+						<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title"><i class="fas fa-search-dollar mx-3 modIcon"></i>APC Customer Segmentation</h4>
+							</div>
+							<div class="modal-body">
+								<h5> <i class="fas fa-question-circle" style="color:darkgoldenrod"></i> &nbsp; Business Objective </h5> 
+									<p style="font-size:14px">
+									To develop an algorithm based Customer Segmentation profile for alternate promotional channels.
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-backward" style="color:darkgoldenrod"></i> &nbsp; Context </h5> 
+									<p style="font-size:14px">
+									Non Personal Promotions are digitally gererated promotions for HCPs. APC is another term for NPP.
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-clinic-medical" style="color:darkgoldenrod"></i> &nbsp; Business Outcome </h5>
+									<p style="font-size:14px">
+									Along with IC Tiers, which enable to segment the HCP population, Alternate Promotion Channel (APC) Segmentation enabled brands to have a mix of IC Tiers and APC Segments to leverage specific sets of HCPs to write more prescriptions.
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-database" style="color:darkgoldenrod"></i> &nbsp; Data Sources </h5>
+									<p style="font-size:14px"> 
+									Product Writing (TRx, NRx, NBRx) Potential, Market Writing Potential,
+									Last Prescription Date, First Prescription Date, Calls,
+									Patient Switches, Patient Claims, Product Patients, Product Claims, Market Claims, Switches per Product Patient, Unique Products written in last 3 months, Connected Prescribers
+									Adoption Potential, Depth Potential								
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-road" style="color:darkgoldenrod"></i> &nbsp; Approach </h5> 
+									<p style="font-size:14px">
+									Integrate different data sources like Novartis internal data, Pricentric, IQVIA, Sales, etc. to get complete mapping of already launched products. Explore the data and derive important features for Product Analogs using Machine Learning
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-code-branch" style="color:darkgoldenrod"></i> &nbsp; Algorithms </h5>
+									<p style="font-size:14px"> 
+									Business Rule based
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-bullseye" style="color:darkgoldenrod"></i> &nbsp; Project Outcome </h5> 
+									<p style="font-size:14px">
+									APC Segmentation was utilized for Marketing Campaigns specifically for NPP (Non Personal Promotions)							
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+						</div>
+					</div>
+					
+					
+					
+					<!-- ##################### PROJECT 6 ##################### -->
+
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-lg-4 card-img-holder">
+									<img src="https://www.klood.com/hubfs/4%20p%27s.png" class="card-img" height=100% alt="image" style="object-fit:cover">
+								</div>
+								<div class="col-lg-8">
+									<div class="card-body">
+										<h5 class="card-title"><a data-toggle="modal" data-target="#myModal6" class="theme-link">Promotional Market Mix</a></h5>
+										<p class="card-text">Model data to find out the right mix of promotions for a particular brand in a geography. Find interaction effects and simulate optimal budget allocation.</p>
+										<p class="card-text"><small class="text-muted">Client: Novartis USA</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<div class="link-mask-text">
+									<a class="btn btn-secondary"  data-toggle="modal" data-target="#myModal6">
+										<i class="fas fa-eye mr-2"></i>View Project Details 
+									</a>
+								</div>
+							</div><!--//link-mask-->
+						</div><!--//card-->
+					</div><!--//col-->
+
+
+					<div class="modal fade" id="myModal6" role="dialog">
+						<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title"><i class="fas fa-search-dollar mx-3 modIcon"></i>Integrated Promotion Mix Modeling</h4>
+							</div>
+							<div class="modal-body">
+								<h5> <i class="fas fa-question-circle" style="color:darkgoldenrod"></i> &nbsp; Business Objective </h5> 
+									<p style="font-size:14px">
+									To know how each individual marketing channel performed in the last year. 
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-backward" style="color:darkgoldenrod"></i> &nbsp; Context </h5> 
+									<p style="font-size:14px">
+									For a particular brand, it is important to know how each of the marketing campaigns (Rep Calls, Digital Touchpoints, Emails) worked in sync to affect the writing behaviour of a HCP. A marketing mix model evaluates all the campaigns together for a fixed period and generates a Average ROI, Marginal ROI and Value Due to.
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-clinic-medical" style="color:darkgoldenrod"></i> &nbsp; Business Outcome </h5>
+									<p style="font-size:14px">The marketing mix model simulation results in understanding the previous campaigns and helps simulate and optimize spend allocation.
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-road" style="color:darkgoldenrod"></i> &nbsp; Approach </h5> 
+									<p style="font-size:14px">
+									<ul style="font-size:14px">
+									<li> Gather the Sales Data (outcome) and the promotional channel data.
+									<li> Generate Adstock or lag factors
+									<li> Run the marketing mix model 
+									<li> Calculate the VDT (Value Due to)
+									<li> Calculate the mROI and aROI
+									<li>
+									</ul>
+								<hr style="margin:20px">
+								<h5> <i class="fas fa-bullseye" style="color:darkgoldenrod"></i> &nbsp; Project Outcome </h5> 
+									<p style="font-size:14px">Web application was designed in Python Plotly Dash framework and deployed to individual system using Docker								
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+						</div>
+					</div>
+
+
+
+				</div><!--//row-->
+				<!-- <div class="text-center py-3"><a href="portfolio.html" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>View Portfolio</a></div> -->
+				
+			</div><!--//container-->
+		</section><!--//featured-section-->
+		
+		<div class="container"><hr></div>
+
+
+<!-- #############################################################################################################################
+###################################################   BLOG   #####################################################################
+############################################################################################################################## -->		
+
+		
+		<section class="latest-blog-section p-3 p-lg-5">
+			<div class="container">
+				<h2 class="section-title font-weight-bold mb-5">Blog Posts</h2>
+				<div class="row">
+
+
+					<div class="col-md-4 mb-5">
+						<div class="card blog-post-card">
+							<img class="card-img-top" src="https://miro.medium.com/max/875/0*z5I68ytDkbPBGalX.png" alt="image">
+							<div class="card-body">
+								<h5 class="card-title"><a class="theme-link" href="https://medium.com/@do2blehelix/orange-juice-for-better-machine-learning-7139cc80f407">Orange Juice for Better Machine Learning</a></h5>
+								<p class="card-text">Easy, Intuitive, Powerful. The combination of these 3 words are generally never come across in Machine Learning while describing a software. Here’s presenting ‘Orange’ which you would might not have come across, but will change the way you look at machine learning. And in a good way....</p>
+								<p class="mb-0"><a class="more-link" href="https://medium.com/@do2blehelix/orange-juice-for-better-machine-learning-7139cc80f407">Read more &rarr;</a></p>
+								
+							</div>
+							<div class="card-footer">
+								<small class="text-muted">Published on Medium</small>
+							</div>
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="col-md-4 mb-5">
+						<div class="card blog-post-card">
+							<img class="card-img-top" src="https://miro.medium.com/max/3200/1*oWE6BS2-B_0ZVVIYzb9ruw.jpeg" alt="image">
+							<div class="card-body">
+								<h5 class="card-title"><a class="theme-link" href="https://medium.com/@do2blehelix/would-you-survive-the-titanic-b289f3e9f919">Would you survive the Titanic?</a></h5>
+								<p class="card-text">This is the guide to the famous Kaggle competition. The aim is to build a predictive model using passenger data (ie name, age, gender, socio-economic class, etc) to predict if a particular passenger with given details is more likely to survive or not....</p>
+								<p class="mb-0"><a class="more-link" href="https://medium.com/@do2blehelix/would-you-survive-the-titanic-b289f3e9f919">Read more &rarr;</a></p>
+							</div>
+							<div class="card-footer">
+								<small class="text-muted">Published on Medium</small>
+								
+							</div>
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="col-md-4 mb-5">
+						<div class="card blog-post-card">
+							<img class="card-img-top" src="https://miro.medium.com/max/2400/1*I5edONKZAmJyTmUW-lMc-w.jpeg" alt="image">
+							<div class="card-body">
+								<h5 class="card-title"><a class="theme-link" href="https://medium.com/@do2blehelix/a-minimal-instant-quick-start-guide-to-github-for-beginners-3310e96fe0ba">A Minimal, Instant Quick-start Guide To Github (For Beginners)</a></h5>
+								<p class="card-text">For the first timers to Git and Github, presenting the minimal, single line quick-start guide to help understand basic concepts relatable to everyday terminology. Hope this helps you get started as fast as lightning, you lazy panda!...</p>
+								<p class="mb-0"><a class="more-link" href="https://medium.com/@do2blehelix/a-minimal-instant-quick-start-guide-to-github-for-beginners-3310e96fe0ba">Read more &rarr;</a></p>
+							</div>
+							<div class="card-footer">
+								<small class="text-muted">Published on Medium</small>
+							</div>
+						</div><!--//card-->
+					</div><!--//col-->
+
+
+				</div><!--//row-->
+				<div class="text-center py-3"><a href="https://do2blehelix.github.io/the-ml-handbook/" class="btn btn-primary" target="_blank"><i class="fas fa-arrow-alt-circle-right mr-2"></i>View Blog</a></div>
+			</div><!--//container-->
+			
+		</section>
+
+<!-- #############################################################################################################################
+###################################################   FOOTER   ###################################################################
+############################################################################################################################## -->
+
+
+		<footer class="footer text-center py-4">
+			<small class="copyright">&copy; Ayan Banerjee</small>
+		</footer>
+		
+	</div><!--//main-wrapper-->
+
+
+
+<!-- #############################################################################################################################
+###################################################   SCRIPTS   ##################################################################
+############################################################################################################################## -->
+
+
+	<!-- Javascript -->          
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.min.js"></script>
+	<script>
+    const slider = tns({
+    container: '.testimonial-carousel',
+    loop: true,
+    items: 3,
+    responsive: {
+	    0:{
+	            items:1,
+        },
+        768:{
+            items:2,
+        },
+        1200: {
+	        items:3,
+        }
+
+	},
+    slideBy: 'page',
+    nav: true,    
+    autoplay: true,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    lazyload: true,
+    gutter: 30,
+    navPosition: 'bottom',
+    mouseDrag: true,
+    controls: false,
+    speed: 800,
+    });
+</script>
+
+	
+</body>
+</html> 
+
